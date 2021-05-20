@@ -74,13 +74,6 @@ def predict():
                                     go_back=False
                                     )
 
-@app.route('/dev')
-def dev():
-    return render_template('predict.html',
-        main_heading='We Recommend you to Consult a Doctor',
-        sub_heading="There's a high chance that you are diagnosed with a heart Disease. We Suggest you to consult a doctor to make sure of your Health Condition.",
-    )
-
 extra_dirs = ['./static/styles','./templates']
 extra_files = extra_dirs[:]
 for extra_dir in extra_dirs:
